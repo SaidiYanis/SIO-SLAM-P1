@@ -1,0 +1,232 @@
+.section {
+    top: -8px;
+    position: fixed;
+    display: inline-block;
+    width: 1980px;
+    height: 80px;
+    background: rgb(0, 96, 156);
+    margin-bottom: 70px;
+    }
+  
+    .mx-1 {
+        display: inline-flex;
+        margin-top: 25px;
+
+    }
+
+
+    .form-control.me-2 {
+        font-size: large;
+        width: 850px;
+        
+    }
+
+
+    .btn.btn-outline-success {
+        font-size: large;
+    }
+
+
+
+    .searbar{
+    display: inline-block;
+    }
+
+    .go {
+        background-color: #F8F9FA;
+        border-radius: 0;
+        border-width: 1px;
+        border-color: rgb(255, 255, 255);
+        color: rgb(0, 96, 156);
+        display: inline;
+        font-size: large;
+    }
+    
+    .go:hover {
+        background-color: rgb(165, 165, 165) !important;
+        border-color: rgb(255, 255, 255) !important;
+        color: rgb(0, 96, 156) !important;
+
+    }
+
+
+    .image {
+        display: inline-flex;
+        margin-left: 20px;
+        margin-right: 40px;
+    }
+
+    .connection {
+        display: inline-flex;
+        margin-left: 300px;
+        color: #ffffff;
+        font-size: la;
+    }
+
+        .button {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border-color: rgb(255, 255, 255);
+            font-size: small;
+            width: 105px;
+            height: 20px;
+        }
+        
+        .button2 {
+            color:rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border-color: rgb(255, 255, 255);
+            font-size: small;
+            width: 135px;
+            height: 20px;
+
+        }
+
+
+ 
+
+
+
+
+
+
+
+
+    .section2 {
+        top: -8px;
+        position: fixed;
+        margin-top: 80px;
+        display: block;
+        width: 1980px;
+        height: 40px;
+        background: rgb(0, 96, 156);
+        
+        }
+
+
+        .accueil {
+            display: inline-block;
+            margin-top: 7px;
+            margin-left: 5%;
+            
+        }
+
+        .ACbutton {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border-color: rgb(0, 0, 0);
+            font-size: large;
+        }
+
+        .equipementbureau {
+            display: inline-block;
+            margin-top: 7px;
+            margin-left: 13%
+            ;
+        }
+
+        .EBbutton {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border-color: rgb(0, 0, 0);
+            font-size: large;
+        }
+        
+
+        .dispositifinformatique {
+            display: inline-block;
+            margin-top: 7px;
+            margin-left: 19%
+            ;
+        }
+
+        .DIbutton {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border-color: rgb(0, 0, 0);
+            font-size: large;
+        }
+        
+
+        .autre {
+            display: inline-block;
+            margin-top: 7px;
+            margin-left: 22%
+            ;
+        }
+
+        .Abutton {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border-color: rgb(0, 0, 0);
+            font-size: large;
+        }
+
+
+
+
+        .body {
+            margin: 0;
+            padding: 0;
+            background-color:rgb(0, 96, 156);
+            height: 100vh;
+          }
+          .container #login-row #login-column #login-box {
+            margin-top: 120px;
+            max-width: 600px;
+            height: 320px;
+            border: 1px solid #9C9C9C;
+            background-color: #EAEAEA;
+          }
+           .container #login-row #login-column #login-box #login-form {
+            padding: 3px !important;
+          }
+
+          
+           .container #login-row #login-column #login-box #login-form #register-link {
+            margin-top: -85px;
+          }
+
+          .log{
+            color: rgba(0, 96, 156) !important;
+          }
+
+          .logmdp{
+            color: rgba(0, 96, 156) !important;
+            
+          }
+
+
+          .logemail{
+            color: rgba(0, 96, 156) !important;
+          }
+          .logme{
+            color: rgba(0, 96, 156) !important;
+            
+          }
+
+          .mdpoublier{
+            color:rgb(0, 96, 156); 
+            display:block;
+          }
+
+          .logbut{
+              background-color:rgb(0, 96, 156);
+              color: #ffffff;
+              border-color: rgb(0, 96, 156) !important;
+          }
+
+
+          .creercompte{
+              background-color: rgb(0, 96, 156);
+              margin-left: 300px;
+              color: rgb(255, 255, 255);
+              border-color: rgb(0, 96, 156);
+              border-radius: 0.375rem;
+          }
+
+          .creercompte:hover{
+              background-color: #0dcaf0 !important;
+              color: rgb(0, 96, 156) !important;              
+          }
+    

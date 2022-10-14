@@ -1,0 +1,159 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connection!{% endblock %}
+        
+{% block stylesheets %}
+       
+    <!--<link href="{{ asset('myoutils/bootstrap.bundle.min.js') }}" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link href="{{ asset('myoutils/bootstrap.min.css') }}" rel="stylesheet" id="bootstrap-css"> -->
+        <link href="{{ asset('myoutils/login.css') }}" rel="stylesheet">
+        
+{% endblock %}
+
+{% block body %}
+
+
+       <!-- Start Top Nav -->
+   {%include 'menus/nav.twig'%}
+    <!-- Close Top Nav -->
+
+
+    <!-- Header -->
+   {%include 'menus/header.twig'%}
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    {%include 'menus/modal.twig'%}
+
+
+   <!-- <header class="section">
+            <div class="mx-1">
+            <img src ="img/téléchargementWhite.png" class="image" width="95" height="45"> -->
+            
+            
+<!--                
+                    <nav class="navbar bg-light">
+                        <div class="container-fluid">
+                            <form class="d-inline-block" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Rechercher..." aria-label="Search">
+                                    <button class="btn btn-outline-success go" type="submit">Go</button>
+                            </form>
+                        </div>
+                            
+                    </nav>
+            -->        
+                <!--    <div class="connection">
+                            Bonjour &nbsp;
+                            <button name="button" class="button">identifiez vous</button>
+                            &nbsp; ou &nbsp;  
+                            <button name="button2" class="button2">Créer un compte</button>
+                        </div> -->
+            </div>        
+        </header>
+
+        
+        <!--2éme section header-->
+<!--  
+        <div class="section2">
+            <span class="accueil"><button name="accueil" class="ACbutton">Accueil</button></span>
+            <span class="equipementbureau"><button name="equipementbureau" class="EBbutton">Equipement de bureau</button></span>              
+            <span class="dispositifinformatique"><button name="dispositifinformatique" class="DIbutton">Dispositif informatique</button></span>              
+            <span class="autre"><button name="autre" class="Abutton">Autre</button></span>
+                
+
+        </div>
+        <div class="ligne"></div>
+
+-->
+
+<body>
+    <div id="h_login">
+        <h3 class="text-center text-white pt-5">Login form</h3>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        {% if error %}
+                            <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                        {% endif %}
+                        
+                       <form id="login-form" class="form" action="" method="post">
+                                <h3 class="text-center text-info log">Se connecter</h3>
+                                <div class="form-group">
+                                    <label for="email" class="logemail">Email</label>
+                                    <input type="email" name="email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="logmdp">Mot de passe</label>
+                                    <input type="password" name="password" id="password" class="form-control">
+                                    <input type="hidden"  name="_csrf_token" value="{{ csrf_token('authenticate')}}">
+
+                                </div>
+                                <div class="form-group">
+                                        <label for="remember-me" class="text log"><span>Ce souvenir de moi</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                                </div>
+                                <div class="form-group">
+                                        <input type="submit" name="submit" class="btn btn-info btn-bg" value="Ce connecter">
+                                        <br>
+                                        <br>
+                                        <a name="creercompte" class="btn btn-info btn-bg" href={{path('app_register')}} >Créer un compte</a>
+                                </div>
+                                    
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</body>
+
+
+
+{#
+<form method="post">
+    {% if error %}
+        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+
+    {% if app.user %}
+        <div class="mb-3">
+            You are logged in as {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Logout</a>
+        </div>
+    {% endif %}
+
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <label for="inputEmail">Email</label>
+    <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus>
+    <label for="inputPassword">Password</label>
+    <input type="password" name="password" id="inputPassword" class="form-control" autocomplete="current-password" required>
+
+    <input type="hidden" name="_csrf_token"
+           value="{{ csrf_token('authenticate') }}"
+    >
+
+    {#
+        Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+        See https://symfony.com/doc/current/security/remember_me.html
+
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" name="_remember_me"> Remember me
+            </label>
+        </div>
+    #}
+
+    
+
+
+
+
+</form>
+
+<!-- Footer -->
+   {%include 'menus/footer.twig'%}
+    <!-- Footer end -->
+  
+{% endblock %}

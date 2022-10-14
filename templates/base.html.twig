@@ -3,8 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        <link href="src\Security\UserAuthenticator.php">
+        <link rel="apple-touch-icon" href="{{ asset('template/assets/img/apple-icon.png') }}">
+        <link rel="shortcut icon" type="image/x-icon" href="{{ asset('template/assets/img/favicon.ico') }}">
+        <link rel="stylesheet" href="{{ asset('template/assets/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('template/assets/css/templatemo.css') }}">
+        <link rel="stylesheet" href="{{ asset('template/assets/css/custom.css') }}">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap"> -->
+{# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+
+        <link rel="stylesheet" href="{{ asset('template/assets/css/fontawesome.min.css') }}">
+        <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon-16x16.png') }}">
+        <link href="{{ asset('myoutils/bootstrap.bundle.min.js') }}" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link href="{{ asset('myoutils/bootstrap.min.css') }}" rel="stylesheet" id="bootstrap-css">
+        <link href="{{ asset('myoutils/bootstrap/bootstrap.bundle.min.js') }}" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
@@ -14,6 +28,8 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% block body %}
+        
+        {% endblock %}
     </body>
 </html>

@@ -1,0 +1,89 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}EquipementBureau{% endblock %}
+   
+{% block stylesheets %}
+        
+       <link href="{{ asset('myoutils/EquipementBureau.css') }}" rel="stylesheet">
+
+{% endblock %}
+
+
+{% block body %}
+ <body>
+
+    <!-- Start Top Nav -->
+   {%include 'menus/nav.twig'%}
+    <!-- Close Top Nav -->
+
+
+    <!-- Header -->
+   {%include 'menus/header.twig'%}
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    {%include 'menus/modal.twig'%}
+
+
+    <br>
+
+      <div class="row center">
+        {% for equipementbureau in equipementbureau %}
+      
+      {% include 'carte/carte.html.twig'%}
+      
+      {% endfor %}
+      </div>
+      <br>
+      <br>
+      <div class="d-flex justify-content-center bd-highlight mb-3">
+        {% if previous >= 0 %}
+                       <a class="btn btn-sm btn-outline-secondary" href="{{ path('app_equipement_bureau', { offset: previous }) }}">Previous</a>
+          {% endif %}
+          {% if next < equipementbureau|length %}
+                       <a class="btn btn-sm btn-outline-primary" href="{{ path('app_equipement_bureau', { offset: next }) }}">Next</a>
+          {% endif %}
+      </div>  
+    <br>
+
+  </body>
+
+  <!-- Footer -->
+   {%include 'menus/footer.twig'%}
+    <!-- Footer end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

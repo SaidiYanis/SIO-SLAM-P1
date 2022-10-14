@@ -1,0 +1,140 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Beaupeyrat Shop{% endblock %}
+
+    
+{% block stylesheets %}
+        
+        <link href="{{ asset('myoutils/Accueil.css') }}" rel="stylesheet">
+{% endblock %}
+
+
+{% block body %}
+<body>
+    <!-- Start Top Nav -->
+   {%include 'menus/nav.twig'%}
+    <!-- Close Top Nav -->
+
+
+    <!-- Header -->
+   {%include 'menus/header.twig'%}
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    {%include 'menus/modal.twig'%}
+
+
+  
+
+    <!-- Start Categories of The Month -->
+    <section class="container py-5">
+        <div class="row text-center pt-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Beaupeyrat shop</h1>
+                <p>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href={{ path('app_equipement_bureau')}}><img src="/img/sourishp.jpg" class="rounded-circle img-fluid border"></a>
+                <h5 class="text-center mt-3 mb-3">Equipement de Bureau</h5>
+                <p class="text-center"><a class="btn btn-primary" href={{ path('app_equipement_bureau')}}>Go Shop</a></p>
+            </div>
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href={{ path('app_dispositif_informatique')}}><img src="/img/server8.jpeg" class="rounded-circle img-fluid border"></a>
+                <h2 class="h5 text-center mt-3 mb-3">Dispositif Informatique</h2>
+                <p class="text-center"><a class="btn btn-primary" href={{ path('app_dispositif_informatique')}}>Go Shop</a></p>
+            </div>
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="#"><img src="/img/cable.jpg" class="rounded-circle img-fluid border"></a>
+                <h2 class="h5 text-center mt-3 mb-3">Autre</h2>
+                <p class="text-center"><a class="btn btn-primary">Go Shop</a></p>
+            </div>
+        </div>
+    </section>
+</body>
+    <!-- End Categories of The Month -->
+
+    <!-- Start Featured Product -->
+    <section class="bg-light">
+        <div class="container py-5">
+            <div class="row text-center py-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1">À propos de l'Institution Beaupeyrat</h1>
+                    <p>
+                        Notre ensemble scolaire, sous contrat d’association avec l’Etat, accueille les jeunes de la toute Petite Section jusqu’aux études supérieures. Fort de ses 400 ans d’histoire, notre établissement bénéficie d’un cadre exceptionnel, en plein centre-ville de Limoges, sur un parc de près de 3 hectares.
+                        <br>
+                        <br>
+                        Nos 1200 élèves et étudiants reçoivent une formation académique solide dans un esprit de bienveillance, de simplicité et de joie. Nous faisons vivre ainsi le projet éducatif et pastoral de la Compagnie Marie-Notre Dame, notre tutelle.
+                        <br>
+                        <br>
+                        A Beaupeyrat, chacun est accueilli avec ses forces et ses fragilités, pour développer ses talents, donner le meilleur de lui-même avec confiance et exigence, optimisme et créativité, dans un esprit ouvert aux autres. A la suite de notre fondatrice Sainte Jeanne de Lestonnac, nous voulons comme elle, « tendre la main » et « entretenir la flamme » de l’espérance pour tous les jeunes.
+                        <br>
+                        <br>
+                        Bonne visite et à bientôt à Beaupeyrat !
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="https://beaupeyrat.fr/">
+                            <img src="/img/téléchargement.png" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                           <br>
+                            <a href="https://beaupeyrat.fr/" class="h2 text-decoration-none text-dark">Beaupeyrat</a>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="https://campus.beaupeyrat.fr/">
+                            <img src="/img/campus.jpeg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <br>
+                            <a href="https://campus.beaupeyrat.fr/" class="h2 text-decoration-none text-dark">Campus</a>
+                            <p class="card-text">
+                                Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="https://facebook.com/Beaupeyrat.limoges/">
+                            <img src="/img/facebook.jpeg" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <br>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">Facebook</a>
+                            <p class="card-text">
+                                Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Featured Product -->
+
+    <!-- Footer -->
+   {%include 'menus/footer.twig'%}
+    <!-- Footer end -->
+
+
+{% endblock %}
+
+
+
+

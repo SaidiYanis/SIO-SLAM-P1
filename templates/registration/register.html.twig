@@ -1,0 +1,143 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+        <link href="{{ asset('myoutils/Register.css') }}" rel="stylesheet">
+        
+{% endblock %}
+
+{% block title %}Créer un compte{% endblock %}
+
+{% block body %}
+
+   <!-- Start Top Nav -->
+   {%include 'menus/nav.twig'%}
+    <!-- Close Top Nav -->
+
+
+    <!-- Header -->
+   {%include 'menus/header.twig'%}
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    {%include 'menus/modal.twig'%}
+
+  <!--  <h1>Créer un compte</h1>
+
+    <header class="section">
+            <div class="mx-1">
+            <img src ="img/téléchargementWhite.png" class="image" width="95" height="45">
+            
+            
+                
+                    <nav class="navbar bg-light searbar">
+                        <div class="container-fluid">
+                            <form class="d-inline-block" role="search">
+                                    <input class="form-control me-2" type="search" placeholder="Rechercher..." aria-label="Search">
+                            </form>
+                        </div>   
+                            
+                    </nav>
+                    <button class="btn btn-outline-success go" type="submit">Go</button>
+                    <div class="connection">
+                        Bonjour &nbsp;   
+                        <button name="button" class="button">identifiez vous</button>
+                        &nbsp; ou &nbsp;  
+                        <button name="button2" class="button2">Créer un compte</button>
+                </div>
+            </div>        
+        </header>
+  -->
+        
+        <!--2éme section header-->
+
+   <!--     <div class="section2">
+            <span class="accueil"><button name="accueil" class="ACbutton">Accueil</button></span>
+            <span class="equipementbureau"><button name="equipementbureau" class="EBbutton">Equipement de bureau</button></span>              
+            <span class="dispositifinformatique"><button name="dispositifinformatique" class="DIbutton">Dispositif informatique</button></span>              
+            <span class="autre"><button name="autre" class="Abutton">Autre</button></span>
+                
+
+        </div>
+        <div class="ligne"></div>
+
+    -->
+
+        <!-- Formulaire -->   
+
+    <!-- style="background-color: #eee;">  -->  
+    <section class="vh-100 back">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-12 col-xl-11">      
+        <div class="card text-black" style="border-radius: 25px;">
+          <div class="card-body p-md-5">
+            <div class="row justify-content-center">
+            <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
+              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+                
+              
+
+                
+                 {{ form_start(registrationForm) }}
+
+                 
+                  </div>
+
+                  <div class="d-flex flex-row justify-content-center mb-4">
+                    <i class="fas fa-envelope fa-m me-3 fa-fw all"></i>                   
+                    
+                        {{ form_row(registrationForm.email,{label:'-', 'attr':{'class': 'emailbox', 'placeholder': "E-mail "}} ) }}
+                    
+                  </div>
+
+                  <div class="d-flex flex-row justify-content-center mb-4">
+                    <i class="fas fa-lock fa-m me-3 fa-fw"></i>
+                    
+                      {{ form_row(registrationForm.password.first, {label:'-','attr':{'class': 'passbox', 'placeholder': "Mot de passe"}}) }}
+                   
+                    </div>
+
+                 <div class="d-flex flex-row justify-content-center mb-4">
+                    <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                   
+                      
+                      {{ form_row(registrationForm.password.second, {label:'-', 'attr':{'class': 'passbox2', 'placeholder': "Répeter votre mot de passe"}}) }}
+                    
+                  </div>
+
+                  <div class="form-check d-flex justify-content-center mb-5 check">
+                    {{ form_row(registrationForm.agreeTerms) }}
+                  </div>
+                  
+                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                      <input type="submit" class="btn btn-primary btn-lg ButReg" value="Créer le compte">
+                  </div>
+                  
+                
+                {{ form_end(registrationForm) }}
+
+                
+              </div>
+        <!-- <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2 pho">
+
+                <img src="img/téléchargement.png"
+                  class="img-fluid" alt="Sample image"> 
+
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Footer -->
+   {%include 'menus/footer.twig'%}
+    <!-- Footer end -->
+
+
+{% endblock %}

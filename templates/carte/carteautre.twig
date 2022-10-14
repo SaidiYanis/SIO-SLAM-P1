@@ -1,0 +1,24 @@
+{% block body %}
+  {% block autre %}
+
+         
+        <br>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">{{ autre.type }}</p>
+              <p class="card-text">{{ autre.nom }}</p>
+              <img src ={{ autre.image }} width="195" height="195"></img>
+              <p class="card-text">Prix : {{ autre.prix }}€</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a type="button" class="btn btn-sm btn-outline-secondary" href={{ path('app_autre_detail', { id: autre.id})}}>View</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        
+    {% endblock autre %}
+{% endblock %}

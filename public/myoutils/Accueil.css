@@ -1,0 +1,231 @@
+
+  .section {
+    top: -8px;
+    position: fixed;
+    display: inline-block;
+    width: 1980px;
+    height: 80px;
+    background: rgb(0, 96, 156);
+    margin-bottom: 70px;
+    }
+  
+    .mx-1 {
+        display: inline-flex;
+        margin-top: 25px;
+
+    }
+
+
+    .form-control.me-2 {
+        font-size: large;
+        width: 850px;
+        
+    }
+
+    .btn.btn-outline-success {
+        font-size: large;
+    }
+
+
+    .image {
+        display: inline-flex;
+        margin-left: 20px;
+        margin-right: 40px;
+    }
+
+    .connection {
+        display: inline-flex;
+        margin-left: 300px;
+        color: #ffffff;
+        font-size: la;
+    }
+
+        .button {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border-color: rgb(255, 255, 255);
+            font-size: small;
+            width: 105px;
+            height: 20px;
+        }
+        
+        .button2 {
+            color:rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border-color: rgb(255, 255, 255);
+            font-size: small;
+            width: 135px;
+            height: 20px;
+
+        }
+
+
+ 
+
+
+
+
+
+
+
+
+    .section2 {
+        top: -8px;
+        position: fixed;
+        margin-top: 80px;
+        display: block;
+        width: 1980px;
+        height: 40px;
+        background: rgb(0, 96, 156);
+        
+        }
+
+
+        .accueil {
+            display: inline-block;
+            margin-top: 7px;
+            margin-left: 5%;
+            
+        }
+
+        .ACbutton {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border-color: rgb(0, 0, 0);
+            font-size: large;
+        }
+
+        .equipementbureau {
+            display: inline-block;
+            margin-top: 7px;
+            margin-left: 13%
+            ;
+        }
+
+        .EBbutton {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border-color: rgb(0, 0, 0);
+            font-size: large;
+        }
+        
+
+        .dispositifinformatique {
+            display: inline-block;
+            margin-top: 7px;
+            margin-left: 19%
+            ;
+        }
+
+        .DIbutton {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border-color: rgb(0, 0, 0);
+            font-size: large;
+        }
+        
+
+        .autre {
+            display: inline-block;
+            margin-top: 7px;
+            margin-left: 22%
+            ;
+        }
+
+        .Abutton {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            border-color: rgb(0, 0, 0);
+            font-size: large;
+        }
+
+  
+
+
+
+
+
+    .Corp {
+            margin-top: 135px;
+        }
+ 
+
+
+        .ligne {
+            display: inline-flex;
+            width: 1980px;
+            height: 3px;
+            background: #000;
+        }
+
+        .ligne2 {
+            display: inline-flex;
+            width: 1980px;
+            height: 3px;
+            background: rgb(255, 255, 255);
+            border-color: #ffffff;
+        }
+        .titre {
+            display: block;
+            margin-left: 27%;
+            margin-top: 20px;
+            font-size: xx-large;
+        
+        }
+
+        .image2 {
+            display: inline-block;
+            margin-left: 550px;
+            width: 450px;
+            height: auto;
+        }
+
+
+        .image3 {
+            display: inline-flex;
+            height: auto;
+            margin-left: 130px;
+            margin-bottom: 100px;
+            object-fit: scale-down;
+         /* border-width: 4px;
+        border-style: groove;
+        border-color: rgb(0,0,0); */
+        }
+
+
+        .corptext {
+            display: inline-flex;
+            margin-left: 200px;
+            margin-right: 375px;
+        }
+
+        .corptext2 {
+           display: inline-block;
+          margin-bottom: 100px;
+           margin-left: 375px;
+           margin-right: 545px;
+      }
+
+      .corptext3 {
+        display: inline-block;
+        margin-left: 200px;
+        margin-right: 375px;
+     }
+
+      .corptext4 {
+         display: block;
+         margin-right: 50px;
+      }
+
+
+
+
+
+
+
+    .section3{
+    display: inline-block;
+    width: 1980px;
+    height: 80px;
+    background: rgb(0, 96, 156);
+    }

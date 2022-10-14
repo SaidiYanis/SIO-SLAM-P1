@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Autre{% endblock %}
+
+{% block body %}
+
+    <!-- Start Top Nav -->
+   {%include 'menus/nav.twig'%}
+    <!-- Close Top Nav -->
+
+
+    <!-- Header -->
+   {%include 'menus/header.twig'%}
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    {%include 'menus/modal.twig'%}
+
+
+    <br>
+
+      <div class="row center">
+        {% for autre in autre %}
+      
+      {% include 'carte/carteautre.twig'%}
+      
+      {% endfor %}
+      </div>
+      <br>
+      <br>
+      <div class="d-flex justify-content-center bd-highlight mb-3">
+        {% if previous >= 0 %}
+                       <a class="btn btn-sm btn-outline-secondary" href="{{ path('app_autre', { offset: previous }) }}">Previous</a>
+          {% endif %}
+          {% if next < autre|length %}
+                       <a class="btn btn-sm btn-outline-primary" href="{{ path('app_autre', { offset: next }) }}">Next</a>
+          {% endif %}
+      </div>  
+    <br>
+
+  </body>
+
+  <!-- Footer -->
+   {%include 'menus/footer.twig'%}
+    <!-- Footer end -->
+
+
+{% endblock %}
+
